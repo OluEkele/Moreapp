@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background: rgb(215, 195, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.content{
+  display: flex;
+  gap: 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+  background-color: blue;
+  color: #fff;
+}
+td, th {
+  border: 0 solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.totalContent{
+  margin: 2rem;
+}
+
+button{
+  background-color: blue;
+  color: #fff;
+  padding: 5px 10px;
+  display: block;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+input{
+  height: 40px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #dddddd;
+  width: 32%;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 1.2rem;
+}
+#display{
+  display: none;
+}
+@media screen and (max-width: 900px){
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  input{
+    width: 100%;
+    margin: 3px auto;
+  }
+}

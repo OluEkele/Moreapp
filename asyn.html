@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./asyn.css">
+  <title>Document</title>
+</head>
+<body>
+
+  
+
+  <div class="container">
+    <h1 class="title">Mortage App</h1>
+    <form id="form">
+      <input  type="number" id="amount" placeholder="Enter loan amount">
+      <input type="number" id="interest_rate" placeholder="Enter loan interest">
+      <input type="number" id="duration" placeholder="Enter loan duration">
+      <button type="submit" id="calculate">Calculate</button>
+    </form>
+    
+    <div id="display">
+      <div class="content">
+        <table class="month">
+          <tr class="first">
+            <th >Monthly Payment</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>HOA</td>
+            <td id="m_hoa"></td>
+            
+          </tr>
+          <tr>
+            <td>Mortage</td>
+            <td id="m_mortage"></td>
+            
+          </tr>
+          <tr>
+      
+            <td>Property Tax</td>
+            <td id="m_property"></td>
+          </tr>
+          <tr>
+            <td>Insurance</td>
+            <td id="m_insurance"></td>
+            
+          </tr>
+          <tr>
+      
+            <td>Total</td>
+            <td id="m_total"></td>
+          </tr>
+        </table>
+        <table class="annual">
+          <tr  class="first">
+            <th>Annual Payment</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>HOA</td>
+            <td id="a_hoa"></td>
+            
+          </tr>
+          <tr>
+            <td>Mortage</td>
+            <td id="a_mortage"></td>
+            
+          </tr>
+          <tr>
+      
+            <td>Property Tax</td>
+            <td id="a_property"></td>
+          </tr>
+          <tr>
+            <td>Insurance</td>
+            <td id="a_insurance"></td>
+            
+          </tr>
+          <tr>
+      
+            <td>Total</td>
+            <td id="a_total"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="totalContent">
+        <table class="total">
+          <tr class="first">
+            <th>Total Interest Paid</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+        
+            <td class="a_total">Total</td>
+            <td id="totalInterest"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+  <script src="asyn.js">
+
+  </script>
+</body>
+</html>
